@@ -6,6 +6,7 @@ let journal = require('./controllers/journalcontroller')
 let user = require('./controllers/usercontroller')
 let calc = require('./controllers/calculatorController')
 sequelize.sync()
+app.use(require('./middleware/headers'))
 //sequelize.sync({force:true}) -- use to refresh the database
 
 app.use(express.json())
