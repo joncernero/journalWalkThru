@@ -6,6 +6,7 @@ function displayMine() {
     headers: new Headers({
       'Content-Type': 'application/json',
       Authorization: accessToken
+      //test
     })
   })
     .then(function (response) {
